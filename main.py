@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 def delete_uploaded_image(path):
     os.remove(path)
-    return "Deleted"
+    # return "Deleted"
 
 def predict_image(path):
     # After Processing, Delete the File
-    delete_uploaded_image(path)
+    # delete_uploaded_image(path) 
     return path
 
 
